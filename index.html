@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Charlie Munger's Mental Models - A Comprehensive Guide</title>
+<meta name="description" content="Master Charlie Munger's mental models including the latticework of models, inversion thinking, psychology of misjudgment, and multidisciplinary approaches to decision-making.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;color:#2d3436;line-height:1.7;background:#f0f4f3}
+a{color:#00695c;text-decoration:none}
+a:hover{color:#e65100;text-decoration:underline}
+nav{background:#1b5e20;padding:12px 0;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,0.3)}
+nav .inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 20px}
+nav .brand{color:#a5d6a7;font-size:1.4em;font-weight:bold;letter-spacing:1px}
+nav .links a{color:#e8f5e9;margin-left:20px;font-size:0.95em}
+nav .links a:hover{color:#a5d6a7;text-decoration:none}
+.hero{background:linear-gradient(135deg,#1b5e20 0%,#2e7d32 40%,#388e3c 100%);color:#fff;text-align:center;padding:80px 20px}
+.hero h1{font-size:2.8em;margin-bottom:15px;color:#a5d6a7;text-shadow:1px 1px 3px rgba(0,0,0,0.4)}
+.hero p{font-size:1.2em;max-width:700px;margin:0 auto 25px;color:#c8e6c9}
+.hero .cta-btn{display:inline-block;background:#ff8f00;color:#fff;padding:14px 35px;border-radius:6px;font-weight:bold;font-size:1.1em;transition:all 0.3s}
+.hero .cta-btn:hover{background:#ffa726;text-decoration:none;transform:translateY(-2px)}
+.container{max-width:1100px;margin:0 auto;padding:40px 20px}
+.section-title{text-align:center;font-size:2em;color:#1b5e20;margin-bottom:10px}
+.section-subtitle{text-align:center;color:#7f8c8d;margin-bottom:40px;font-size:1.1em}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:30px;margin-bottom:50px}
+.card{background:#fff;border-radius:10px;padding:30px;box-shadow:0 4px 15px rgba(0,0,0,0.08);border-left:5px solid #2e7d32;transition:transform 0.3s}
+.card:hover{transform:translateY(-5px)}
+.card h3{color:#1b5e20;font-size:1.3em;margin-bottom:12px}
+.card p{color:#555;margin-bottom:15px}
+.card .link{color:#00695c;font-weight:bold}
+.quote-box{background:#1b5e20;color:#a5d6a7;padding:40px;border-radius:10px;text-align:center;margin:40px 0;font-style:italic;font-size:1.3em;line-height:1.6}
+.quote-box span{display:block;color:#c8e6c9;font-size:0.7em;margin-top:15px;font-style:normal}
+.model-section{background:#fff;padding:35px;border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,0.06);margin:30px 0}
+.model-section h3{color:#1b5e20;margin-bottom:15px;font-size:1.4em;border-bottom:2px solid #a5d6a7;padding-bottom:10px}
+.model-section p{color:#555;margin-bottom:15px}
+.model-section ul{padding-left:20px;margin-bottom:15px}
+.model-section li{margin-bottom:8px;color:#555}
+.three-col{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;margin:40px 0}
+.three-col .item{background:#fff;padding:25px;border-radius:10px;text-align:center;box-shadow:0 3px 10px rgba(0,0,0,0.06)}
+.three-col .item .num{font-size:2.5em;color:#2e7d32;font-weight:bold}
+.three-col .item h4{color:#1b5e20;margin:10px 0}
+.three-col .item p{color:#777;font-size:0.95em}
+.resource-list{background:#fff;padding:30px;border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,0.06);margin:30px 0}
+.resource-list h3{color:#1b5e20;margin-bottom:20px;font-size:1.3em}
+.resource-list ul{list-style:none;padding:0}
+.resource-list li{padding:12px 0;border-bottom:1px solid #eee}
+.resource-list li:last-child{border-bottom:none}
+.resource-list li::before{content:"*";color:#2e7d32;font-weight:bold;margin-right:12px}
+.cta-section{background:linear-gradient(135deg,#1b5e20,#2e7d32);color:#fff;padding:50px;border-radius:12px;text-align:center;margin:50px 0}
+.cta-section h2{font-size:2em;margin-bottom:15px;color:#a5d6a7}
+.cta-section p{font-size:1.1em;margin-bottom:25px;color:#c8e6c9}
+.cta-section .btn{display:inline-block;background:#ff8f00;color:#fff;padding:14px 40px;border-radius:6px;font-weight:bold;font-size:1.1em}
+.cta-section .btn:hover{background:#ffa726;text-decoration:none}
+footer{background:#1b5e20;color:#c8e6c9;padding:40px 20px;text-align:center}
+footer .footer-links{margin-bottom:20px}
+footer .footer-links a{color:#a5d6a7;margin:0 12px}
+footer p{font-size:0.9em}
+@media(max-width:768px){.hero h1{font-size:2em}.three-col{grid-template-columns:1fr}.card-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+<div class="inner">
+<div class="brand">Munger Mental Models</div>
+<div class="links">
+<a href="#latticework">Latticework</a>
+<a href="#inversion">Inversion</a>
+<a href="#psychology">Psychology</a>
+<a href="#multi">Multidisciplinary</a>
+<a href="https://keeprule.com">KeepRule</a>
+</div>
+</div>
+</nav>
+
+<div class="hero">
+<h1>Charlie Munger's Mental Models</h1>
+<p>Build a latticework of mental models to make better decisions in investing and life. Learn how the legendary thinker uses multidisciplinary wisdom to see what others miss.</p>
+<a href="https://keeprule.com" class="cta-btn">Practice Mental Models on KeepRule</a>
+</div>
+
+<div class="container">
+<div class="three-col">
+<div class="item">
+<div class="num">100+</div>
+<h4>Mental Models</h4>
+<p>Munger advocates learning models from every major discipline</p>
+</div>
+<div class="item">
+<div class="num">60+</div>
+<h4>Years of Practice</h4>
+<p>Decades of applying multidisciplinary thinking to real decisions</p>
+</div>
+<div class="item">
+<div class="num">25</div>
+<h4>Key Biases</h4>
+<p>Psychological misjudgments every decision-maker must understand</p>
+</div>
+</div>
+
+<h2 class="section-title" id="latticework">The Latticework of Mental Models</h2>
+<p class="section-subtitle">You must have models from multiple disciplines and use them together.</p>
+
+<div class="card-grid">
+<div class="card">
+<h3>Why a Latticework?</h3>
+<p>Munger argues that relying on a single discipline is like having only a hammer -- everything looks like a nail. By building a latticework of models from physics, biology, psychology, economics, and history, you develop superior judgment.</p>
+<a href="https://keeprule.com/scenarios/mental-models-overview" class="link">Explore on KeepRule ></a>
+</div>
+<div class="card">
+<h3>Cross-Disciplinary Thinking</h3>
+<p>The best insights come from connecting ideas across fields. Understanding evolution helps you grasp competitive dynamics. Physics teaches you about equilibrium in markets. Psychology reveals why crowds behave irrationally.</p>
+<a href="https://keeprule.com/scenarios/multidisciplinary-thinking" class="link">Learn more on KeepRule ></a>
+</div>
+<div class="card">
+<h3>Building Your Own Lattice</h3>
+<p>Start with the big ideas from major disciplines. You do not need to master every field -- just understand the core principles. Read widely, think deeply, and practice connecting ideas across domains.</p>
+<a href="https://keeprule.com" class="link">Start building on KeepRule ></a>
+</div>
+</div>
+
+<div class="quote-box">
+"You must know the big ideas in the big disciplines and use them routinely -- all of them, not just a few."
+<span>-- Charlie Munger</span>
+</div>
+
+<h2 class="section-title" id="inversion">Inversion: Think Backwards</h2>
+<p class="section-subtitle">Invert, always invert. Turn a problem upside down.</p>
+
+<div class="model-section">
+<h3>The Power of Inversion</h3>
+<p>Instead of asking "How do I succeed?", Munger asks "How would I guarantee failure?" Then he avoids those things. This backward approach reveals hidden risks and blind spots that forward thinking misses entirely.</p>
+<ul>
+<li>Want a great marriage? List all the ways marriages fail, then avoid those behaviors</li>
+<li>Want investment success? Study every way investors lose money, then steer clear</li>
+<li>Want a successful business? Identify every path to bankruptcy, then do the opposite</li>
+<li><a href="https://keeprule.com/scenarios/inversion-thinking">Practice inversion thinking on KeepRule</a></li>
+</ul>
+<p>Inversion is one of the most powerful tools in Munger's toolkit because it forces you to think about problems from multiple angles. Most people only think forward -- what should I do? Inversion asks what should I NOT do?</p>
+<a href="https://keeprule.com/scenarios/avoiding-stupidity" class="link">Learn about avoiding stupidity on KeepRule ></a>
+</div>
+
+<h2 class="section-title" id="psychology">Psychology of Human Misjudgment</h2>
+<p class="section-subtitle">Understanding the 25 standard causes of human misjudgment.</p>
+
+<div class="card-grid">
+<div class="card">
+<h3>Incentive-Caused Bias</h3>
+<p>Never underestimate the power of incentives. People will rationalize anything that serves their financial interest. "Whose bread I eat, his song I sing" is one of the most reliable predictors of human behavior.</p>
+<a href="https://keeprule.com/scenarios/incentive-bias" class="link">Study on KeepRule ></a>
+</div>
+<div class="card">
+<h3>Confirmation Bias</h3>
+<p>The human mind naturally seeks information that confirms existing beliefs and ignores contradictory evidence. Munger combats this by actively seeking out disconfirming evidence for every thesis.</p>
+<a href="https://keeprule.com/scenarios/confirmation-bias" class="link">Explore on KeepRule ></a>
+</div>
+<div class="card">
+<h3>Social Proof Tendency</h3>
+<p>When uncertain, people look at what others are doing and follow the crowd. This herd mentality creates bubbles in markets and leads to groupthink in organizations. Independent thinking is the antidote.</p>
+<a href="https://keeprule.com/scenarios/social-proof" class="link">Learn more on KeepRule ></a>
+</div>
+<div class="card">
+<h3>Lollapalooza Effects</h3>
+<p>When multiple psychological biases combine and reinforce each other, they create extreme outcomes Munger calls "lollapalooza effects." Understanding this combination effect is crucial for avoiding catastrophic errors.</p>
+<a href="https://keeprule.com/scenarios/lollapalooza-effect" class="link">Discover on KeepRule ></a>
+</div>
+</div>
+
+<h2 class="section-title" id="multi">Multidisciplinary Approach</h2>
+<p class="section-subtitle">The best thinkers draw from every discipline.</p>
+
+<div class="model-section">
+<h3>Key Models from Major Disciplines</h3>
+<p>Munger identifies the most important mental models from each major field of study. These are not academic exercises -- they are practical tools for making better decisions every day.</p>
+<ul>
+<li><strong>Mathematics:</strong> Compound interest, probability, Bayesian updating -- <a href="https://keeprule.com/scenarios/probability-thinking">explore on KeepRule</a></li>
+<li><strong>Physics:</strong> Critical mass, equilibrium, feedback loops</li>
+<li><strong>Biology:</strong> Evolution, natural selection, adaptation -- <a href="https://keeprule.com/scenarios/evolutionary-thinking">study on KeepRule</a></li>
+<li><strong>Psychology:</strong> Cognitive biases, incentives, social proof</li>
+<li><strong>Economics:</strong> Opportunity cost, comparative advantage, supply and demand</li>
+<li><strong>Engineering:</strong> Redundancy, margin of safety, breakpoints</li>
+</ul>
+</div>
+
+<div class="resource-list">
+<h3>Essential Munger Wisdom on KeepRule</h3>
+<ul>
+<li><a href="https://keeprule.com/scenarios/mental-models-overview">Mental Models Overview -- Build your latticework</a></li>
+<li><a href="https://keeprule.com/scenarios/inversion-thinking">Inversion Thinking -- Solve problems backwards</a></li>
+<li><a href="https://keeprule.com/scenarios/avoiding-stupidity">Avoiding Stupidity -- Easier than seeking brilliance</a></li>
+<li><a href="https://keeprule.com/scenarios/second-order-thinking">Second-Order Thinking -- What happens next?</a></li>
+<li><a href="https://keeprule.com/scenarios/circle-of-competence">Circle of Competence -- Know your limits</a></li>
+<li><a href="https://keeprule.com">Browse all mental model scenarios on KeepRule</a></li>
+</ul>
+</div>
+
+<div class="cta-section">
+<h2>Build Your Mental Model Toolkit</h2>
+<p>KeepRule offers interactive scenarios that let you practice applying mental models to real-world situations. Sharpen your thinking through hands-on decision exercises.</p>
+<a href="https://keeprule.com" class="btn">Start Practicing on KeepRule</a>
+</div>
+
+<div class="card-grid">
+<div class="card">
+<h3>First Principles Thinking</h3>
+<p>Munger strips problems down to their fundamental truths and builds up from there. Instead of reasoning by analogy (which most people do), first principles thinking asks: What are the basic elements? What do we know for certain? What can we deduce from those certainties?</p>
+<a href="https://keeprule.com/scenarios/first-principles" class="link">Practice on KeepRule ></a>
+</div>
+<div class="card">
+<h3>Margin of Safety in Thinking</h3>
+<p>Just as engineers build bridges to handle far more weight than expected, Munger applies margin of safety to decision-making. Account for what you do not know. Assume your estimates are wrong. Build in buffers against your own ignorance.</p>
+<a href="https://keeprule.com/scenarios/margin-of-safety" class="link">Study on KeepRule ></a>
+</div>
+<div class="card">
+<h3>Envy and Jealousy</h3>
+<p>Munger considers envy the most destructive of all human tendencies. It produces nothing positive and drives people to make terrible decisions. The envious person suffers twice -- first from the pain of envy, then from the consequences of envy-driven actions.</p>
+<a href="https://keeprule.com/scenarios/envy-bias" class="link">Recognize on KeepRule ></a>
+</div>
+</div>
+
+<div class="model-section">
+<h3>Checklist Thinking</h3>
+<p>Munger is a strong advocate of using checklists for important decisions. Pilots use them. Surgeons use them. Why would investors think they can keep everything in their heads? A good checklist prevents errors of omission -- the things you forget to consider.</p>
+<ul>
+<li>Create checklists for your investment process to avoid repeating mistakes</li>
+<li>Include items that check for common psychological biases</li>
+<li>Review and update your checklists based on new experiences and learnings</li>
+<li>Use negative checklists too -- reasons NOT to proceed</li>
+<li><a href="https://keeprule.com/scenarios/checklist-method">Build checklists on KeepRule</a></li>
+</ul>
+</div>
+
+<div class="model-section">
+<h3>The Importance of Reading</h3>
+<p>Munger is one of the most voracious readers in the investment world. He estimates he spends 80% of his waking hours reading and thinking. This massive information intake fuels his latticework of mental models and keeps his thinking sharp.</p>
+<ul>
+<li>Read broadly across multiple disciplines -- not just finance and business</li>
+<li>Study biography and history to learn from the successes and failures of others</li>
+<li>Read primary sources rather than summaries whenever possible</li>
+<li><a href="https://keeprule.com/scenarios/learning-habits">Develop learning habits on KeepRule</a></li>
+</ul>
+</div>
+
+<div class="quote-box">
+"Spend each day trying to be a little wiser than you were when you woke up."
+<span>-- Charlie Munger</span>
+</div>
+
+<div class="resource-list">
+<h3>Additional Munger Frameworks</h3>
+<ul>
+<li><a href="https://keeprule.com/scenarios/opportunity-cost">Opportunity Cost -- What are you giving up?</a></li>
+<li><a href="https://keeprule.com/scenarios/delayed-gratification">Delayed Gratification -- Patience as a superpower</a></li>
+<li><a href="https://keeprule.com/scenarios/worldly-wisdom">Worldly Wisdom -- The accumulated knowledge of civilization</a></li>
+</ul>
+</div>
+
+</div>
+
+
+<div class="resource-list">
+<h3>Further Reading and Practice</h3>
+<ul>
+<li><a href="https://keeprule.com">KeepRule -- Interactive Investment Wisdom Platform</a></li>
+<li><a href="https://keeprule.com">Browse All Decision-Making Scenarios</a></li>
+<li><a href="https://keeprule.com">Test Your Investment Knowledge</a></li>
+<li><a href="https://keeprule.com">Join the Community of Thoughtful Investors</a></li>
+<li><a href="https://keeprule.com">Daily Wisdom Challenges and Exercises</a></li>
+<li><a href="https://keeprule.com">Real-World Case Studies and Analysis</a></li>
+<li><a href="https://keeprule.com">Build Your Personal Investment Playbook</a></li>
+<li><a href="https://keeprule.com">Track Your Decision-Making Progress</a></li>
+</ul>
+</div>
+
+<div class="cta-section">
+<h2>Take the Next Step</h2>
+<p>Every great investor started with curiosity and a commitment to learning. KeepRule provides the structured framework you need to transform knowledge into actionable wisdom. Start with any scenario and build your skills one decision at a time.</p>
+<a href="https://keeprule.com" class="btn">Begin Your Journey on KeepRule</a>
+</div>
+
+
+<div class="model-section">
+<h3>The Power of Compound Knowledge</h3>
+<p>Munger applies the concept of compounding not just to money, but to knowledge. Every new mental model you learn compounds with every existing model, creating exponentially more powerful thinking frameworks. The person with 100 mental models does not think 10 times better than the person with 10 -- they think 100 times better because of the interconnections between models.</p>
+<ul>
+<li>Start with the most universal models and expand from there</li>
+<li>Practice applying models to real situations daily</li>
+<li>Keep a journal of decisions made and the models that informed them</li>
+<li><a href="https://keeprule.com/scenarios/compound-knowledge">Practice compound knowledge on KeepRule</a></li>
+</ul>
+</div>
+
+<footer>
+<div class="footer-links">
+<a href="https://keeprule.com">KeepRule Home</a>
+<a href="https://keeprule.com/scenarios/mental-models-overview">Mental Models</a>
+<a href="https://keeprule.com/scenarios/inversion-thinking">Inversion</a>
+<a href="https://keeprule.com/scenarios/avoiding-stupidity">Avoiding Stupidity</a>
+</div>
+<p>Inspired by Charlie Munger's wisdom. Explore more at <a href="https://keeprule.com">keeprule.com</a></p>
+<p>Copyright 2026 Munger Mental Models Guide. Educational content for thinkers.</p>
+</footer>
+</body>
+</html>
